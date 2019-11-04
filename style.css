@@ -1,0 +1,184 @@
+* { 
+    box-sizing: border-box; 
+}
+
+@font-face {
+    font-family: 'GT America Expanded';
+    src: url('fonts/GTAmerica-ExpandedLight.woff2') format('woff2'),
+        url('fonts/GTAmerica-ExpandedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body{
+    background: #000000;
+}
+
+.fullpage{
+    width: 100%;
+    height: 100vh;
+}
+
+.logo, .menu{
+    z-index: 1;
+    top: 10vh;
+    position: fixed;
+}
+
+
+.logo a, .menu a{
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 12px;
+    font-family: 'GT America Expanded';
+}
+
+.logo{
+    left: 15vh;
+}
+
+.menu{ 
+     right: 15vh;
+}
+
+.footer {
+    z-index: 1;
+	bottom: 0;
+    margin-bottom:5vh;
+    right: 15vh;
+	position: fixed;
+    transition: 0.5s ease;
+ }
+
+
+.flickity-page-dots{
+    z-index: 1; 
+	position: fixed !important;
+	bottom: 10vh !important;
+    left: 15vh !important;
+	transition: 0.5s ease;
+}
+
+
+/* white circles */
+.flickity-page-dots .dot {
+  opacity: 1;
+  width: 7px;
+  height: 7px;
+  background: transparent;
+  border: 1px solid white;
+  transition: 0.5s ease;
+}
+
+.flickity-page-dots .dot:hover {
+  background: white;
+  transition: 0.5s ease;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+  transition: 0.5s ease;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+	font-family: 'GT America Expanded';
+    float:left;
+	font-size: 10pt;
+	display: inline-block;
+	width: auto;
+}
+
+li a {
+	opacity: 0.5;
+    display: block;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	transition: 0.5s ease;
+}
+
+li a:hover:not(.active) {
+	opacity: 1;
+	transition: 0.5s ease;
+}
+
+.active {
+	opacity: 1;
+}
+
+
+.carousel-cell .port-img{
+    padding-top: 15vh;
+    margin-right: 600px;
+    margin-left: 30%;
+    overflow: hidden;
+    width: 400px;
+    opacity: 0.5;
+    height: 100vh;
+  }
+  
+  .carousel-cell img {
+    display: block;
+  }
+  
+@media screen and ( min-width: 768px ) {
+    .carousel-cell img {
+      height: 550px;
+    }
+  }
+
+.port-text {
+    margin-left: 40%;
+}
+
+.number {
+    top: 35%;
+    margin-left: 28%;
+    position: absolute;
+    color: #fafafa;
+    font-size: 14px;
+    z-index: 1;
+    font-family: 'GT America Expanded';
+}
+
+.port-text h4{
+    position: absolute;
+    z-index: 1;
+    color:#fafafa;
+    font-family: orpheuspro, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    top: 25%;
+ }
+
+ .port-tag{
+    margin-left: 80%; 
+    top: 60%;
+    position: absolute;
+}
+
+.hr{
+    width:5%;
+    position: absolute;
+    margin-left: -5%;
+ }
+
+
+ .port-tag h5{
+    z-index: 1;
+    color:#fafafa;
+    font-family: 'GT America Expanded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+ }
